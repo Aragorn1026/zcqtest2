@@ -29,7 +29,7 @@ public class Zcqtest2Application {
 	public String zcqtest2(@RequestParam(value = "name", defaultValue = "World") String name) throws IOException {
 
 		String url = "http://zcqtest/getdate";
-		return String.format(restTemplate.getForObject(url,String.class) + ", Hello zcqtest2 v2 %s! \n", name);
+		return String.format(restTemplate.getForObject(url,String.class) + ", Hello zcqtest2 v1 %s! \n", name);
 
 	}
 
@@ -39,7 +39,7 @@ public class Zcqtest2Application {
 
 		Date date = new Date() ;
 
-		return String.format(" --> NSF: zcqtest2 v2: " + date.toString() + " <-- \n");
+		return String.format(" --> NSF: zcqtest2 v1: " + date.toString() + " <-- \n");
 
 	}
 
